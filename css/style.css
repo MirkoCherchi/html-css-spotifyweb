@@ -21,7 +21,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     color: #717171; 
-    height: 63.125rem;
+    height: 1010px;
 }
 
 ul{
@@ -41,8 +41,12 @@ a{
 /* header */
 
 .nav-bar .logo img{
-    width: 100%;
-    padding: 1.25rem 4.8125rem 1.5625rem 1.25rem;
+    width: 75%;
+    padding: 1.25rem 0 1.5625rem 1.25rem;
+}
+
+.nav-bar .logo-small img{
+    display: none;
 }
 
 
@@ -54,6 +58,10 @@ a{
 .icon-home a{
     color: #fff;
     vertical-align: middle;    
+}
+
+.icon-nav{
+    font-size: 14px;
 }
 
 .icon-nav img{
@@ -72,7 +80,7 @@ a{
 }
 
 .fa-square-plus{
-    font-size: 40px;
+    font-size: 55px;
     vertical-align: middle;
     margin-right: .625rem;
 }
@@ -121,3 +129,99 @@ a{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+    .nav-bar{
+        width: 50px;
+        padding: 0 11px;
+        justify-content: space-between;
+    }
+
+    .icon-nav img{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .icon-menu{
+        padding: 0;
+    }
+
+    .nav-bar .logo-small img{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .nav-playlist, 
+    .install-none,
+    .icon-nav a,
+    .logo img,
+    .line-nav{
+        display: none;
+    }
+
+    .icon-home{
+        border-left: none;
+        padding: 0;
+    }
+
+    .install-app{
+        width: 70%;
+        margin-left: 3px;
+    }
+    
+    .install-utente{
+        margin: 0;
+        padding: 0;
+    }
+
+    .user img{
+        margin: 0;
+        width: 100%;
+    }
+
+    .logo-small{
+        margin: 5px 0 15px 0;
+    }
+
+    .icon-menu{
+        margin-top: 13px;
+    }
+
+    .user-nav{
+        margin: 23px 0 10px 0;
+    }
+
+
+}
