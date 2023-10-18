@@ -19,7 +19,9 @@ body{
     width: 14.375rem;
     display: flex;
     flex-direction: column;
-    color: #717171;  
+    justify-content: space-between;
+    color: #717171; 
+    height: 63.125rem;
 }
 
 ul{
@@ -28,6 +30,11 @@ ul{
 a{
     text-decoration: none;
     color: #717171;
+}
+
+.nav-playlist{
+    padding-left: 1.375rem;
+    padding-top: 1.875rem;
 }
 
 
@@ -58,3 +65,59 @@ a{
 .icon-menu{
     padding: .3125rem 0 .3125rem 1.375rem;
 }
+
+.playlist-menu{
+    color: #fff;
+    padding-bottom: .9375rem;
+}
+
+.fa-square-plus{
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: .625rem;
+}
+
+.crea-playlist{
+    padding-bottom: 1.4375rem;
+}
+
+.name-playlist{
+    padding-bottom: 1.5rem;
+    font-size: 14px;
+}
+
+.install-app{
+    display: flex;
+    
+    font-size: .875rem;
+}
+
+.install-utente{
+    padding-left: 1.375rem;
+    padding-right: 1.25rem;
+}
+
+.user img{
+    width: 10%;
+    vertical-align: middle;
+    margin-right: .625rem;
+}
+
+.user-nav{
+    color: #fff;
+    font-weight: 800;
+    padding-bottom: .5rem;
+}
+
+.user-nav img{
+    background-color: #808080;
+    width: 15%;
+    clip-path: circle(46.8% at 50% 47%);   
+}
+
+.line-nav{
+    margin-top: .75rem;
+    margin-bottom: .9375rem;
+}
+
+
