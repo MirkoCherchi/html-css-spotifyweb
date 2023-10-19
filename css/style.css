@@ -23,6 +23,7 @@ body{
     color: #717171;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -159,6 +160,7 @@ a{
     right: 0;
     z-index: 100;
     bottom: 0;
+    overflow: unset;
 }
 
 .foot-left{
@@ -304,14 +306,17 @@ a{
 /* main */
 main{
     background-color: #141922;
-    width: 100vw;
-   
 }
 
 .main-top{
     background-color: #080b12;
     height: 90px;
     text-align: end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 230px;
+    opacity: 0.8;
 }
 
 .btn{
@@ -329,6 +334,7 @@ main{
     width: 100%;
     margin: 0 auto; 
     padding-top: 25px;
+    margin-top: 90px;
 }
 
 .list-flex{
@@ -519,6 +525,8 @@ main{
     .user-nav{
         margin: 23px 0 10px 0;
     }
+    
+    /* /header */
 
     /* footer */
 
@@ -547,6 +555,12 @@ main{
     .foot-right{
         gap: 6px;
     }
-   
+   /* /footer */
+
+   /* main */
+
+   .main-top{
+    left: 50px;
+   }
 }
 
