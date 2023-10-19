@@ -21,9 +21,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
     color: #717171;
-    height: calc(100vh - 90px);
+    height: 100%;
     overflow: hidden;
 }
+
 
 ul{
     list-style: none;
@@ -116,7 +117,7 @@ a{
 
 .install-utente{
     padding-left: 1.375rem;
-    padding-right: 1.25rem;
+    padding-right: 1.25rem;  
 }
 
 .user img{
@@ -128,7 +129,7 @@ a{
 .user-nav{
     color: #fff;
     font-weight: 800;
-    padding-bottom: .5rem;
+    padding-bottom: 11px;
 }
 
 .user-nav img{
@@ -147,7 +148,10 @@ a{
 
 /* footer */
 
-footer {
+.container-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 90px;
     background-color: #282828;
     position: fixed;
@@ -155,13 +159,6 @@ footer {
     right: 0;
     z-index: 100;
     bottom: 0;
-}
-
-.container-foot{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
 }
 
 .foot-left{
@@ -307,8 +304,8 @@ footer {
 /* main */
 main{
     background-color: #141922;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+   
 }
 
 .main-top{
@@ -325,6 +322,7 @@ main{
     border-radius: 50px;
     margin: 20px 5px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .container-menu{
@@ -343,8 +341,52 @@ main{
 
 .line-evidenza{
     color: #adff2f;
-    margin: 7px 28px 0 28px;
+    margin: 5px 28px 0 28px;
 }
+
+.recent-play{
+    padding-left: 1.5625rem;
+    padding-right: 35px;
+    height: calc(100% - 90px);
+}
+
+.tit-recent{
+    padding: 40px 0 30px 0;
+    font-size: 22px;
+    color: #fff;
+}
+.blocco{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.blocco img{
+    width: 100%;
+}
+
+.container-img-main{
+    display: flex;
+    gap: 15px;
+}
+
+.tit-album{
+    color: #fff;
+    padding: 20px 0 10px 0;
+    font-size: 18px;
+}
+
+.subtitle{
+    font-size: 13px;
+    color: #7b7e82;
+}
+
+
+
+
+
 
 
 /* /main */
@@ -370,13 +412,45 @@ main{
 
 
 /* responsive */
+@media screen and (max-width: 992px) {
+
+    .nav-bar{
+        height: 100%;
+    }
+
+    .container-img-main{
+        flex-wrap: wrap; 
+         
+    }
+
+    .blocco{
+        width: calc(100% / 4 - 15px);
+    }
+
+    .recent-play{
+        padding-right: 0;
+    }
+
+}
+
+
 
 @media screen and (max-width: 768px) {
 
     .list-flex{
         flex-wrap: wrap;
-        width: ((100% - 28px) / 5);
+        width: ((100% - 28px) / 4);
     }
+    /* main */
+
+    .blocco{
+        width: calc(100% / 2 - 15px);
+    }
+
+    .recent-play{
+        padding-right: 0;
+    }
+
 
 }
 
@@ -474,7 +548,5 @@ main{
         gap: 6px;
     }
    
-    
-
 }
 
