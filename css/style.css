@@ -11,18 +11,18 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    width: 100vw;
+    height: 100vh;
 }
 
 .nav-bar{
     background-color: #000;
-    width: 14.375rem;
+    width: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #717171; 
+    color: #717171;
     height: calc(100vh - 90px);
-    position: relative;
+    overflow: hidden;
 }
 
 ul{
@@ -36,13 +36,15 @@ a{
 .nav-playlist{
     padding-left: 1.375rem;
     padding-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
 }
 
 
 /* header */
 
 .nav-bar .logo img{
-    width: 75%;
+    width: 70%;
     padding: 1.25rem 0 1.5625rem 1.25rem;
 }
 
@@ -61,11 +63,11 @@ a{
 }
 
 .icon-nav{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .icon-nav img{
-    width: 15%;
+    width: 13%;
     vertical-align: middle;
     margin-right: .625rem;
 }
@@ -80,26 +82,31 @@ a{
 }
 
 .fa-square-plus{
-    font-size: 55px;
+    font-size: 50px;
     vertical-align: middle;
     margin-right: .625rem;
 }
 
 .list-playlist{
     overflow-y: auto;
-    height: calc(100vh - 580px);
+    height: calc(100vh - 520px);
     min-height: 100px;
 }
 
 
 .crea-playlist{
     padding-bottom: 1.4375rem;
+    font-size: 14px;
 }
 
+.scroll-list{
+    overflow-y: hidden;
+    flex-grow: 1;
+}
 
 .name-playlist{
     padding-bottom: 1.5rem;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .install-app{
@@ -147,7 +154,150 @@ footer {
     left: 0;
     right: 0;
     z-index: 100;
+    bottom: 0;
 }
+
+.container-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.foot-left{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    
+}
+.tit-brano-foot{
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+.brano-foot{
+    font-size: 10px;
+    color: #848484;
+    padding-left: 10px;
+    width: calc(100px - 20px);
+}
+
+.foot-left img{
+    width: 43px;
+    margin-left: 10px;   
+}
+
+.icon-left-footer{
+    padding-left: 40px;
+    display: flex;
+}
+
+.fa-folder{
+    padding-left: 15px;
+}
+
+.center-top{
+    display: flex;  
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+}
+
+.center-top a{
+    color: #fff;   
+}
+
+.fa-forward-step{
+    padding-right: 22px;
+}
+
+.fa-backward-step{
+    padding-left: 22px;
+}
+
+.fa-circle-play{
+    font-size: 24px;
+    padding: 0 32px;   
+}
+
+.icon-foot-center{
+    font-size: 16px;   
+}
+
+.foot-center{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    flex-grow: 1;
+}
+
+.center-bottom{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;     
+}
+
+.progress-bar{
+    height: 4px;
+    border-radius: 10px;
+    width: 65%;
+    background-color: #5a5a5a;
+}
+
+.progress{
+    position: relative;
+    height: 100%;
+    width: 25%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.time-player{
+    color: #fff;
+    font-size: 12px;   
+}
+
+.foot-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    width: 30%;
+}
+.volume-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+    width: 100%;
+}
+
+.progress-volume-bar{
+    height: 4px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: #5a5a5a;
+    margin-right: 10px;
+}
+
+.progress-volume{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.foot-right i{
+    color: #fff;
+    font-size: 13px;
+}
+
 
 
 
@@ -175,10 +325,17 @@ footer {
 /* responsive */
 
 @media screen and (max-width: 768px) {
-    
+    /* footer */
+
+    .foot-center{
+        
+    }
+
 }
 
 @media screen and (max-width: 576px) {
+    
+    /* header */
     
     .nav-bar{
         width: 50px;
@@ -242,5 +399,35 @@ footer {
         margin: 23px 0 10px 0;
     }
 
+    /* footer */
+
+    .icon-left-footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px 0 25px; 
+    }
+    .fa-folder{
+        padding: 0;
+    }
+
+    .foot-left img{
+        width: 31px;
+    }
+
+    .center-bottom{
+        gap: 6px;
+    }
+
+    .volume-bar{
+        gap: 8px;
+    }
+
+    .foot-right{
+        gap: 6px;
+    }
+   
+    
 
 }
+
