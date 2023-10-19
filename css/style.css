@@ -327,6 +327,24 @@ main{
     font-size: 12px;
 }
 
+.container-menu{
+    width: 100%;
+    margin: 0 auto; 
+    padding-top: 25px;
+}
+
+.list-flex{
+    display: flex;
+    gap: 27px;
+    font-size: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.line-evidenza{
+    color: #adff2f;
+    margin: 7px 28px 0 28px;
+}
 
 
 /* /main */
@@ -354,6 +372,11 @@ main{
 /* responsive */
 
 @media screen and (max-width: 768px) {
+
+    .list-flex{
+        flex-wrap: wrap;
+        width: ((100% - 28px) / 5);
+    }
 
 }
 
