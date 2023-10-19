@@ -385,6 +385,10 @@ main{
     font-size: 18px;
 }
 
+.bottom-album{
+    font-size: 14px;
+}
+
 .subtitle{
     font-size: 13px;
     color: #7b7e82;
@@ -422,6 +426,12 @@ main{
     flex-direction: column;
 }
 
+.circle img{
+    clip-path: circle(47%);
+    height: 100%; 
+    width: 100%;  
+}
+
 
 
 /* /main */
@@ -449,6 +459,11 @@ main{
 
     .album-john{
         width: calc(100% / 2 - 15px); 
+    }
+
+    .circle img{
+        clip-path: circle(50%);
+        height: 80%;   
     }
 
 }
@@ -486,6 +501,7 @@ main{
         width: 50px;
         padding: 0 11px;
         justify-content: space-between;
+        height: calc(100% - 90px);
     }
 
     .icon-nav img{
