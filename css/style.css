@@ -14,13 +14,17 @@ body{
     height: 100vh;
 }
 
+.blocco img{
+    display: block;
+}
+
 header{
     position: relative;
 }
 
 .nav-bar{
     background-color: #000;
-    width: 230px;
+    width: 14.375rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +34,7 @@ header{
     left: 0;
     top: 0;
     right: 0;
-    z-index: 1      
+    z-index: 1;      
 }
 
 ul{
@@ -62,7 +66,7 @@ a{
 
 .icon-home{
     border-left: 3px solid#adff2f;
-    padding: .3125rem 0 .3125rem 1.25rem
+    padding: .3125rem 0 .3125rem 1.25rem;
 }
 
 .icon-home a{
@@ -71,7 +75,7 @@ a{
 }
 
 .icon-nav{
-    font-size: 13px;
+    font-size: .8125rem;
 }
 
 .icon-nav img{
@@ -97,14 +101,14 @@ a{
 
 .list-playlist{
     overflow-y: auto;
-    height: calc(100vh - 520px);
-    min-height: 100px;
+    height: calc(100vh - 32.5rem);
+    min-height: 6.25rem;
 }
 
 
 .crea-playlist{
     padding-bottom: 1.4375rem;
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 .scroll-list{
@@ -114,7 +118,7 @@ a{
 
 .name-playlist{
     padding-bottom: 1.5rem;
-    font-size: 12px;
+    font-size: .75rem;
 }
 
 .install-app{
@@ -136,7 +140,7 @@ a{
 .user-nav{
     color: #fff;
     font-weight: 800;
-    padding-bottom: 11px;
+    padding-bottom: .6875rem;
 }
 
 .user-nav img{
@@ -159,7 +163,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 5.625rem;
     background-color: #282828;
     position: fixed;
     left: 0;
@@ -176,29 +180,29 @@ a{
     
 }
 .tit-brano-foot{
-    font-size: 13px;
+    font-size: .8125rem;
     font-weight: 700;
     color: #fff;
 }
 .brano-foot{
-    font-size: 10px;
+    font-size: .625rem;
     color: #848484;
-    padding-left: 10px;
-    width: calc(100px - 20px);
+    padding-left: .625rem;
+    width: calc(6.25rem - 1.25rem);
 }
 
 .foot-left img{
-    width: 43px;
-    margin-left: 10px;   
+    width: 2.6875rem;
+    margin-left: .625rem;   
 }
 
 .icon-left-footer{
-    padding-left: 40px;
+    padding-left: 2.5rem;
     display: flex;
 }
 
 .fa-folder{
-    padding-left: 15px;
+    padding-left: .9375rem;
 }
 
 .center-top{
@@ -213,20 +217,20 @@ a{
 }
 
 .fa-forward-step{
-    padding-right: 22px;
+    padding-right: 1.375rem;
 }
 
 .fa-backward-step{
-    padding-left: 22px;
+    padding-left: 1.375rem;
 }
 
 .fa-circle-play{
-    font-size: 24px;
-    padding: 0 32px;   
+    font-size: 1.5rem;
+    padding: 0 2rem;   
 }
 
 .icon-foot-center{
-    font-size: 16px;   
+    font-size: 1rem;   
 }
 
 .foot-center{
@@ -235,7 +239,7 @@ a{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 17px;
+    gap: 1.0625rem;
     flex-grow: 1;
 }
 
@@ -244,12 +248,12 @@ a{
     width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 28px;     
+    gap: 1.75rem;     
 }
 
 .progress-bar{
-    height: 4px;
-    border-radius: 10px;
+    height: .25rem;
+    border-radius: .625rem;
     width: 65%;
     background-color: #5a5a5a;
 }
@@ -259,35 +263,35 @@ a{
     height: 100%;
     width: 25%;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 .time-player{
     color: #fff;
-    font-size: 12px;   
+    font-size: .75rem;   
 }
 
 .foot-right{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 17px;
+    gap: 1.0625rem;
     width: 30%;
 }
 .volume-bar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 14px;
+    gap: .875rem;
     width: 100%;
 }
 
 .progress-volume-bar{
-    height: 4px;
-    border-radius: 10px;
+    height: .25rem;
+    border-radius: .625rem;
     width: 80%;
     background-color: #5a5a5a;
-    margin-right: 10px;
+    margin-right: .625rem;
 }
 
 .progress-volume{
@@ -295,12 +299,12 @@ a{
     height: 100%;
     width: 30%;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 .foot-right i{
     color: #fff;
-    font-size: 13px;
+    font-size: .8125rem;
 }
 
 /* /footer */
@@ -314,60 +318,61 @@ main{
     background-color: #141922;
     height: 100vh;
     overflow-y: auto;
-    padding-bottom: 90px;
-    padding-left: 230px;
+    padding-bottom: 5.625rem;
+    padding-left: 14.375rem;
 }
 
 .main-top{
     background-color: #080b12;
-    height: 90px;
+    height: 5.625rem;
     text-align: end;
     position: fixed;
     top: 0;
     right: 0;
-    left: 230px;
+    left: 14.375rem;
     opacity: 0.8;
+    z-index: 1;
 }
 
 .btn{
     all: unset;
     color: #fff;
-    border: 2px solid #fff;
-    padding: 12px 40px;
-    border-radius: 50px;
-    margin: 20px 5px;
-    font-size: 12px;
+    border: .125rem solid #fff;
+    padding: .75rem 2.5rem;
+    border-radius: 3.125rem;
+    margin: 1.25rem .9375rem;
+    font-size: .75rem;
     cursor: pointer;
 }
 
 .container-menu{
     margin: 0 auto; 
-    padding-top: 25px;
-    margin-top: 90px;
+    padding-top: 1.5625rem;
+    margin-top: 5.625rem;
 }
 
 .list-flex{
     display: flex;
-    gap: 27px;
-    font-size: 12px;
+    gap: 1.6875rem;
+    font-size: .75rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .line-evidenza{
     color: #adff2f;
-    margin: 5px 28px 0 28px;
+    margin: .3125rem 1.75rem 0 1.75rem;
 }
 
 .recent-play{
     padding-left: 1.5625rem;
-    padding-right: 35px;
+    padding-right: 2.1875rem;
     
 }
 
 .tit-recent{
-    padding: 40px 0 30px 0;
-    font-size: 22px;
+    padding: 2.5rem 0 1.875rem 0;
+    font-size: 1.375rem;
     color: #fff;
 }
 .blocco{
@@ -384,27 +389,30 @@ main{
 
 .container-img-main{
     display: flex;
-    gap: 15px;
+    gap: .9375rem;
 }
 
 .tit-album{
-    color: #fff;
-    padding: 20px 0 10px 0;
-    font-size: 18px;
+    padding: 1.25rem 0 .625rem 0;
+    font-size: 1rem;
+}
+
+.tit-album a{
+    color: #fff;  
 }
 
 .bottom-album{
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 .subtitle{
-    font-size: 13px;
+    font-size: .8125rem;
     color: #7b7e82;
 }
 
 .tit-john{
-    padding: 45px 0 10px 0;
-    font-size: 22px;
+    padding: 2.8125rem 0 .625rem 0;
+    font-size: 1.375rem;
     color: #fff;
 }
 
@@ -416,8 +424,8 @@ main{
 .album-john{
     display: flex;
     gap: 15px;
-    width: calc(200% / 6 - 25px);
-    padding-top: 30px; 
+    width: calc(200% / 6 - 1.5625rem);
+    padding-top: 1.875rem; 
 }
 
 .img-john{
@@ -434,18 +442,20 @@ main{
     display: flex;
     flex-direction: column;
 }
+.circle{
+    height: 100%;
+    width: 100%;
+}
 
 .circle img{
     clip-path: circle(47%);
-    height: 100%; 
     width: 100%; 
 }
 
 .padding-bottom{
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
+    text-align: center;
 }
-
-
 
 /* /main */
 
@@ -453,13 +463,14 @@ main{
 /* responsive */
 @media screen and (max-width: 992px) {
 
+    /* main */
     .container-img-main{
         flex-wrap: wrap; 
          
     }
 
     .blocco{
-        width: calc(100% / 4 - 15px);
+        width: calc(100% / 4 - .9375rem);
     }
 
     .recent-play{
@@ -467,7 +478,7 @@ main{
     }
 
     .album-john{
-        width: calc(100% / 2 - 15px); 
+        width: calc(100% / 2 - .9375rem); 
     }
 
     .circle img{
@@ -481,14 +492,15 @@ main{
 
 @media screen and (max-width: 768px) {
 
+    /* main */
     .list-flex{
         flex-wrap: wrap;
-        width: ((100% - 28px) / 4);
+        width: ((100% - 1.75rem) / 4);
     }
-    /* main */
+    
 
     .blocco{
-        width: calc(100% / 2 - 15px);
+        width: calc(100% / 2 - .9375rem);
     }
 
     .recent-play{
@@ -496,7 +508,7 @@ main{
     }
 
     .album-john{
-        width: calc(200% / 2 - 15px); 
+        width: calc(200% / 2 - .9375rem); 
     }
 
 
@@ -507,10 +519,10 @@ main{
     /* header */
     
     .nav-bar{
-        width: 50px;
-        padding: 0 11px;
+        width: 3.125rem;
+        padding: 0 .6875rem;
         justify-content: space-between;
-        height: calc(100% - 90px);
+        height: calc(100% - 5.625rem);
     }
 
     .icon-nav img{
@@ -544,7 +556,7 @@ main{
 
     .install-app{
         width: 70%;
-        margin-left: 3px;
+        margin-left: .1875rem;
     }
     
     .install-utente{
@@ -558,15 +570,15 @@ main{
     }
 
     .logo-small{
-        margin: 5px 0 15px 0;
+        margin: .3125rem 0 .9375rem 0;
     }
 
     .icon-menu{
-        margin-top: 13px;
+        margin-top: .8125rem;
     }
 
     .user-nav{
-        margin: 23px 0 10px 0;
+        margin: 1.4375rem 0 .625rem 0;
     }
     
     /* /header */
@@ -577,37 +589,117 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0 40px 0 25px; 
+        padding: 0 2.5rem 0 1.5625rem; 
     }
     .fa-folder{
         padding: 0;
     }
 
     .foot-left img{
-        width: 31px;
+        width: 1.9375rem;
     }
 
     .center-bottom{
-        gap: 6px;
+        gap: .375rem;
     }
 
     .volume-bar{
-        gap: 8px;
+        gap: .5rem;
     }
 
     .foot-right{
-        gap: 6px;
+        gap: .375rem;
     }
    /* /footer */
 
    /* main */
 
    .main-top{
-    left: 50px;
+    left: 3.125rem;
    }
 
    main{
-    padding-left: 50px;
+    padding-left: 3.125rem;
    }
 }
+
+
+
+/* hover */
+
+a:hover{
+    color: #fff;
+}
+
+.name-brano:hover{
+color: #fff;
+text-decoration: underline;
+cursor: pointer;
+}
+
+.btn:hover{
+    scale: 1.1;   
+}
+
+.fa-regular:hover{
+     scale: 1.1;
+}
+
+.progress-bar:hover .progress{
+    background-color: #adff2f;
+}
+
+.progress-volume-bar:hover .progress-volume{
+    background-color: #adff2f;
+}
+
+.progress-volume-bar:hover .progress-volume::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -0.125rem;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(50%, calc(.25rem - 50%));
+    width: .625rem;
+    height: .625rem;
+}
+
+.progress-bar:hover .progress::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -0.125rem;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(50%, calc(.25rem - 50%));
+    width: .625rem;
+    height: .625rem;
+}
+
+.fa-hover{
+    position: absolute;
+    font-size: 2.8125rem;
+    color: #fff; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: none;
+}
+
+.hover-img{
+    position: relative;
+}
+
+.hover-img:hover img{
+    opacity: 0.5;
+}
+
+.hover-img:hover .fa-hover{
+    display: block;
+    opacity: 2;
+    scale: 1;
+    cursor: pointer;
+}
+
 
