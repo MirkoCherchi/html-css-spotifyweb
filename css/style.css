@@ -117,7 +117,7 @@ a{
 
 .install-utente{
     padding-left: 1.375rem;
-    padding-right: 1.25rem;  
+    padding-right: 1.25rem;
 }
 
 .user img{
@@ -159,7 +159,7 @@ a{
     right: 0;
     z-index: 100;
     bottom: 0;
-    overflow: unset;
+    
 }
 
 .foot-left{
@@ -306,7 +306,7 @@ a{
 main{
     background-color: #141922;
     height: 1100px;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-bottom: 90px;
 }
 
@@ -429,7 +429,11 @@ main{
 .circle img{
     clip-path: circle(47%);
     height: 100%; 
-    width: 100%;  
+    width: 100%; 
+}
+
+.padding-bottom{
+    padding-bottom: 100px;
 }
 
 
@@ -439,10 +443,6 @@ main{
 
 /* responsive */
 @media screen and (max-width: 992px) {
-
-    .nav-bar{
-        height: 100%;
-    }
 
     .container-img-main{
         flex-wrap: wrap; 
