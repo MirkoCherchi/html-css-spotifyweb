@@ -14,6 +14,10 @@ body{
     height: 100vh;
 }
 
+header{
+    position: relative;
+}
+
 .nav-bar{
     background-color: #000;
     width: 230px;
@@ -22,8 +26,11 @@ body{
     justify-content: space-between;
     color: #717171;
     overflow: hidden;
-    height: calc(1100px - 90px);
-    
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1      
 }
 
 ul{
@@ -305,9 +312,10 @@ a{
 /* main */
 main{
     background-color: #141922;
-    height: 1100px;
+    height: 100vh;
     overflow-y: auto;
     padding-bottom: 90px;
+    padding-left: 230px;
 }
 
 .main-top{
@@ -333,7 +341,6 @@ main{
 }
 
 .container-menu{
-    width: 100%;
     margin: 0 auto; 
     padding-top: 25px;
     margin-top: 90px;
@@ -355,6 +362,7 @@ main{
 .recent-play{
     padding-left: 1.5625rem;
     padding-right: 35px;
+    
 }
 
 .tit-recent{
@@ -402,6 +410,7 @@ main{
 
 .container-john{
     padding-left: 1.5625rem;
+
 }
 
 .album-john{
@@ -595,6 +604,10 @@ main{
 
    .main-top{
     left: 50px;
+   }
+
+   main{
+    padding-left: 50px;
    }
 }
 
