@@ -320,6 +320,7 @@ main{
     overflow-y: auto;
     padding-bottom: 5.625rem;
     padding-left: 14.375rem;
+    width: 100%;
 }
 
 .main-top{
